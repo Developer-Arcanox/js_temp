@@ -1,0 +1,34 @@
+.featured-card:hover img,
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+
+.featured-card img,
+.blog-card img {
+    transition: 0.5s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.primary-btn {
+    transition: 0.3s ease;
+}
+
+.ticker {
+    display: flex;
+    gap: 40px;
+    white-space: nowrap;
+    animation: ticker 18s linear infinite;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
